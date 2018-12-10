@@ -22,8 +22,6 @@ RUN source /emsdk/emsdk_env.sh && \
     mkdir /opencv/opencv-3.4.4/build_emscripten && \
     python /opencv_wasm_lux/build_opencv_emscripten.py --opencv_dir /opencv/opencv-3.4.4 --install_dir /opencv_wasm_lux --emscripten_dir /emsdk/emscripten/1.38.21 /opencv/opencv-3.4.4/build_emscripten
 
-
-
 RUN cd /opencv \
         && cd opencv-3.4.4 \
         && mkdir build \
@@ -79,3 +77,5 @@ RUN cd /opencv \
         && cd opencv-3.4.4/build \
         && make install \
         && ldconfig
+
+USER appuser
