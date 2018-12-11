@@ -79,5 +79,5 @@ RUN cd /opencv \
         && ldconfig
 
 USER appuser
+ADD ./build.sh /home/appuser
 SHELL ["/bin/bash", "-c"]
-RUN cd /home/appuser
