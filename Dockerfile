@@ -79,3 +79,5 @@ RUN cd /opencv \
         && ldconfig
 
 USER appuser
+SHELL ["/bin/bash", "-c"]
+RUN cd /home/appuser
