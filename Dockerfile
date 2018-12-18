@@ -15,7 +15,7 @@ FROM diuis/docker-emsdk-opencv3-wasm_eigen:v1.0.0
 USER root
 RUN apt-get update && apt-get install --no-install-recommends -y git && \
     apt-get autoremove && apt-get clean && \
-    ln -s /usr/local/include/eigen3 /usr/include/eigen3
+    ln -s /usr/include/eigen3 /usr/local/include/eigen3
 USER appuser
 ADD ./build_opencv_emscripten.py /home/appuser/
 SHELL ["/bin/bash", "-c"]
