@@ -1,17 +1,5 @@
 FROM diuis/docker-emsdk-opencv3-wasm_eigen:v1.0.0
 
-# RUN  cd ~ \
-#         && wget https://github.com/Kitware/CMake/releases/download/v3.12.4/cmake-3.12.4.tar.gz \
-#         && tar -xzf cmake-3.12.4.tar.gz \
-#         && cd cmake-3.12.4 \
-#         && mkdir build \
-#         && cd build \
-#         && ../bootstrap -- -DCMAKE_BUILD_TYPE:STRING=Release \
-#         && make -j2 \
-#         && make install \
-#         && cd ~ \
-#         && rm -rf cmake-3.12.4 \
-#         && rm cmake-3.12.4.tar.gz
 USER root
 RUN apt-get update && apt-get install --no-install-recommends -y git && \
     apt-get autoremove && apt-get clean && \
