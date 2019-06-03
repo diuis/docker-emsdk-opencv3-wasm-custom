@@ -1,5 +1,9 @@
 language: minimal
 
+git:
+  depth: false
+  quiet: true
+
 services:
   - docker
 
