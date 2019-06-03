@@ -12,4 +12,4 @@ RUN source /home/appuser/emsdk/emsdk_env.sh && \
     mkdir /home/appuser/opencv/build_emscripten && \
     mkdir /home/appuser/opencv_wasm_lux && \
     mkdir /home/appuser/vto_wasm_headtracker && \
-    python /home/appuser/build_opencv_emscripten.py --opencv_dir /home/appuser/opencv --install_dir /home/appuser/opencv_wasm_lux --emscripten_dir /home/appuser/emsdk/emscripten/1.38.21 /home/appuser/opencv/build_emscripten
+    python /home/appuser/build_opencv_emscripten.py --opencv_dir /home/appuser/opencv --install_dir /home/appuser/opencv_wasm_lux --emscripten_dir /home/appuser/emsdk/emscripten/1.38.31 /home/appuser/opencv/build_emscripten
