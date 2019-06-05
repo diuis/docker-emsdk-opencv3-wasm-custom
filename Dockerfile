@@ -1,4 +1,4 @@
-FROM diuis/docker-emsdk-opencv3-wasm_eigen:opencv3.4.6
+FROM diuis/docker-emsdk-opencv3-wasm_eigen:opencv3.4.5
 
 USER root
 RUN ln -s /usr/include/eigen3 /usr/local/include/eigen3
